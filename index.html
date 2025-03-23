@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monster Survivors - Survive the Onslaught of Monsters in this Action-Packed Game</title>
+    <meta name="description" content="Play Monster Survivors online - a thrilling survival game where you battle endless waves of monsters using various weapons and abilities.">
+    <link rel="canonical" href="https://monstersurvivors.com/">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        apple: {
+                            blue: '#0071e3',
+                            gray: '#f5f5f7',
+                            darkgray: '#333333',
+                            black: '#1d1d1f'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer components {
+            .container-custom {
+                @apply max-w-6xl mx-auto px-4 sm:px-6;
+            }
+            .btn-primary {
+                @apply bg-apple-blue text-white font-semibold py-2 px-6 rounded-lg hover:opacity-90 transition-opacity;
+            }
+            .game-container {
+                @apply w-full aspect-[16/9] max-w-5xl mx-auto border-4 border-apple-blue rounded-lg overflow-hidden shadow-xl;
+            }
+        }
+    </style>
+</head>
+<body class="bg-apple-gray text-apple-black">
+    <!-- Header -->
+    <header class="bg-apple-black text-white py-4 shadow-md sticky top-0 z-50">
+        <div class="container-custom flex justify-between items-center">
+            <div class="text-2xl font-bold">Monster Survivors</div>
+            <nav class="hidden md:flex space-x-6">
+                <a href="#game" class="hover:text-apple-blue transition-colors">Play Now</a>
+                <a href="#about" class="hover:text-apple-blue transition-colors">About</a>
+                <a href="#features" class="hover:text-apple-blue transition-colors">Features</a>
+                <a href="#tips" class="hover:text-apple-blue transition-colors">Tips & Tricks</a>
+            </nav>
+            <button class="md:hidden text-2xl">☰</button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="py-12 md:py-20 bg-gradient-to-b from-apple-black to-apple-darkgray text-white">
+        <div class="container-custom text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">Monster Survivors</h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">Survive endless waves of monsters in this fast-paced action roguelike adventure!</p>
+            <a href="#game" class="btn-primary text-lg">Play Now</a>
+        </div>
+    </section>
+
+    <!-- Game Section -->
+    <section id="game" class="py-12 bg-white">
+        <div class="container-custom">
+            <h2 class="text-3xl font-bold text-center mb-8">Play Monster Survivors Online</h2>
+            <div class="game-container">
+                <iframe 
+                    src="https://cloud.onlinegames.io/games/2025/unity/monster-survivors/index-og.html" 
+                    frameborder="0"
+                    class="w-full h-full"
+                    allowfullscreen
+                    title="Monster Survivors Game"
+                ></iframe>
+            </div>
+            <div class="text-center mt-4">
+                <p class="text-sm text-gray-500">Having trouble? Make sure you're using a modern browser with JavaScript enabled.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-12 bg-apple-gray">
+        <div class="container-custom">
+            <h2 class="text-3xl font-bold text-center mb-8">About Monster Survivors</h2>
+            <div class="max-w-4xl mx-auto prose lg:prose-xl">
+                <p>Monster Survivors is an action-packed roguelike survival game where your objective is simple: stay alive as long as possible against relentless waves of monsters. As you progress, you'll unlock powerful weapons, abilities, and upgrades to help you survive the increasingly difficult challenges.</p>
+                <p>Inspired by popular roguelike games, Monster Survivors combines fast-paced action with strategic decision-making. Each playthrough offers a unique experience with procedurally generated enemy patterns and random power-ups, ensuring that no two games are ever the same.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-12 bg-white">
+        <div class="container-custom">
+            <h2 class="text-3xl font-bold text-center mb-12">Game Features</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-apple-gray p-6 rounded-xl shadow-md">
+                    <h3 class="text-xl font-bold mb-3">Endless Survival</h3>
+                    <p>Face waves of increasingly difficult monsters and see how long you can survive in this challenging roguelike experience.</p>
+                </div>
+                <div class="bg-apple-gray p-6 rounded-xl shadow-md">
+                    <h3 class="text-xl font-bold mb-3">Diverse Characters</h3>
+                    <p>Choose from multiple unique characters, each with their own starting weapons and special abilities.</p>
+                </div>
+                <div class="bg-apple-gray p-6 rounded-xl shadow-md">
+                    <h3 class="text-xl font-bold mb-3">Weapon Upgrades</h3>
+                    <p>Collect experience to level up and choose from various weapons and upgrades to create your perfect monster-slaying build.</p>
+                </div>
+                <div class="bg-apple-gray p-6 rounded-xl shadow-md">
+                    <h3 class="text-xl font-bold mb-3">Epic Boss Battles</h3>
+                    <p>Test your skills against massive boss monsters that appear at regular intervals throughout your run.</p>
+                </div>
+                <div class="bg-apple-gray p-6 rounded-xl shadow-md">
+                    <h3 class="text-xl font-bold mb-3">Procedural Generation</h3>
+                    <p>Experience a different challenge every time with randomly generated enemy patterns and power-up opportunities.</p>
+                </div>
+                <div class="bg-apple-gray p-6 rounded-xl shadow-md">
+                    <h3 class="text-xl font-bold mb-3">Achievements System</h3>
+                    <p>Complete special challenges to unlock achievements and discover all the secrets the game has to offer.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tips Section -->
+    <section id="tips" class="py-12 bg-apple-gray">
+        <div class="container-custom">
+            <h2 class="text-3xl font-bold text-center mb-8">Tips & Strategies</h2>
+            <div class="max-w-4xl mx-auto space-y-6">
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <h3 class="text-xl font-bold mb-3">Beginner Tips</h3>
+                    <ul class="list-disc pl-6 space-y-2">
+                        <li>Focus on movement and dodging first - survival is your primary goal</li>
+                        <li>Choose complementary weapons that cover different attack patterns</li>
+                        <li>Collect all experience gems to level up faster</li>
+                        <li>Health pickups are rare - prioritize them when your health is low</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <h3 class="text-xl font-bold mb-3">Advanced Strategies</h3>
+                    <ul class="list-disc pl-6 space-y-2">
+                        <li>Learn each enemy's attack patterns and behaviors</li>
+                        <li>Create synergies between your weapons and passive items</li>
+                        <li>Sometimes it's better to kite enemies into groups before attacking</li>
+                        <li>Save area-of-effect abilities for when you're surrounded</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-apple-black text-white py-8">
+        <div class="container-custom">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <p class="font-bold text-xl">Monster Survivors</p>
+                    <p class="text-sm text-gray-400">© 2023 Monster Survivors. All rights reserved.</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#" class="hover:text-apple-blue transition-colors">Privacy Policy</a>
+                    <a href="#" class="hover:text-apple-blue transition-colors">Terms of Service</a>
+                    <a href="#" class="hover:text-apple-blue transition-colors">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html> 
